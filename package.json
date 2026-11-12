@@ -1,0 +1,24 @@
+{
+  "name": "haunted-focus",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test test/*.test.js",
+    "check": "npm run format:check && npm test && npm run build",
+    "test:e2e": "playwright test",
+    "format:check": "prettier --check src index.html package.json playwright.config.js test README.md .kiro/specs/haunted-focus/implementation.md"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "jsdom": "^31.0.0",
+    "prettier": "^3.10.1",
+    "vite": "^7.2.2"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  }
+}
