@@ -15,4 +15,4 @@ Run `npx playwright install chromium` and `npm run test:e2e` on a supported mach
 
 ## Delivery boundary
 
-The source and local production build are complete. No GitHub push, pull request, deployment, or Kiro operation was performed. This work is not evidence of Kiro usage or contest eligibility.
+The source and local production build are complete. Changes are being delivered on the isolated `feat/haunted-focus-app` branch for review. The main branch is unchanged. No deployment or Kiro operation was performed. This work is not evidence of Kiro usage or contest eligibility.
