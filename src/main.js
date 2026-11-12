@@ -26,7 +26,7 @@ try {
 let locked = !!navigator.locks;
 const uid = () => crypto.randomUUID();
 const app = document.querySelector("#app");
-app.innerHTML = `<header><a class="brand" href="#main"><span class="brand-icon">✦</span> haunted<span>focus</span></a><div class="header-right"><span class="local-badge">● LOCAL & PRIVATE</span><button class="icon-button" id="settings-toggle" aria-expanded="false" aria-controls="settings">⚙ <span>Settings</span></button></div></header>
+app.innerHTML = `<header><a class="brand" href="#main"><span class="brand-icon">✦</span> haunted<span>focus</span></a><div class="header-right"><span class="local-badge">● LOCAL & PRIVATE</span><button class="icon-button" id="settings-toggle" aria-expanded="false" aria-controls="settings"><span aria-hidden="true">⚙</span> <span>Settings</span></button></div></header>
 <main id="main"><div class="intro"><p class="eyebrow">MAKE ROOM FOR A LITTLE MAGIC</p><h1>Less distraction.<br><em>More enchantment.</em></h1><p>One task. One quiet moment. Bring your haunted house to life.</p></div>
 <section id="settings" class="settings" hidden aria-label="Settings"><div><h2>Your quiet corner</h2><p>All data stays in this browser. No account, tracking, or cloud sync.</p></div><label><input id="motion" type="checkbox"> Reduce decorative motion</label><p>System reduced-motion settings are always respected.</p><button id="export">Export data</button><button id="settings-close">Close settings</button></section>
 <p id="storage-warning" class="warning" role="status" hidden></p><p id="tab-warning" class="warning" hidden>This app is already open in another tab. Use that tab to keep your progress in sync.</p>
